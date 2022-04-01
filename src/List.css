@@ -1,0 +1,27 @@
+.list-numbered {
+    list-style: none;
+    margin-left: 16px;
+    counter-reset: line;
+}
+
+.list-numbered > li {
+    position: relative;
+    margin-bottom: 24px;
+    display: flex;
+}
+
+.list-numbered > li:before {
+    position: absolute;
+    left: -36px;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+    background-color: #B53C2C;
+    border-radius: 50%;
+    color: #fff;
+    text-align:center;
+    line-height: 20px;
+    counter-increment: line;
+    content: counter(line);
+}
