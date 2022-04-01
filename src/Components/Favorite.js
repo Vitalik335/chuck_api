@@ -20,7 +20,7 @@ function Favorite(props) {
                         _.map(props.favoriteJoke, (item) => {
                             return <FavoriteTable item={item}/>
                         }) :
-                        <p>Add favorite joke if you want to edit, please</p>
+                        <p>Add favorite joke if you want to edit, please !</p>
                 }
             </Row>
         </>
